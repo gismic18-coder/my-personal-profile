@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+           background-image: url('pofile pic.jpg');
+            background-position: center;
+            background-size: cover;
+            
+           background-repeat: no-repeat;
+           background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        } 
+        header img {
+            border-radius: 10%;
+            width: 150px;
+            height: 150px;
+        }
+        nav {
+            background-color: #0044ab;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            text-decoration-line-color: gray;
+            
+        }
+        section {
+            padding: 20px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        @media screen and (max-width: 600px) {
+            nav {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+        }
+        footer {
+            background-color: #0044ab;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    
+        <h1>Owen George</h1>
+        <p>Beginner Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <button id="grtbutton">say hello</button>
+        <p>
+            Hello! My name is Owen George. I am learning web development and this is my first personal website.
+            I enjoy learning new technology and building simple projects.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML (Beginner)</li>
+            <li>CSS (Beginner)</li>
+            <li>Javascript(Beginner)</li>
+            <li>python(Beginner)</li>
+            <li>VB.NET (Beginner)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+               <p>Email: gismic18@gmail.com</p>
+                <p>Phone: 0797263303</p>
+        
+
+    </section>
+
+    <footer>
+        <p>© 2026 Owen</p>
+    </footer>
+<script>
+    document.getElementById("grtbutton").addEventListener("click", 
+    function() {
+        alert("Hello, welcome to my personal profile!");
+    });
+</script>
+</body>
+</html>
